@@ -1,13 +1,6 @@
-#' A toy dataset for demonstrating the functions in toypackage
-#'
-#'
-#'
-#' @format ## `toy_data`
-#' A data frame with 5 rows and 4 columns:
-#' \describe{
-#'   \item{subject_id}{An integer denoting the subject id}
-#'   \item{reaction_time}{Reaction time in seconds}
-#'   \item{test_score}{Test score of each subject}
-#'   \item{recalled_words}{Words recalled by each subject}
-#' }
-"toy_data"
+toy_data <- data.frame(
+  subject_id=(1:5),
+  reaction_time= c(1.2,0.9,1.5,0.8,1.1),
+  test_score = c(45,82,55,91,67),
+  recalled_words = c("cat","dog","mouse","horse","cow")
+)
